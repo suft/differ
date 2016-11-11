@@ -3,7 +3,7 @@
 ![Result](./differences.jpg)
 
 ## Summary
-An algorithm written in Node, to spot the differences between two images. The algorithm uses percent differences in RGBA values between pixels of the two images and determines outliers by comparing values against a certain tolerance.
+An algorithm written in Node, to spot the differences between two images and produces a grayscale image highlighting the differences. The algorithm uses percent differences in RGBA values between pixels of the two images and determines outliers by comparing values against a certain tolerance.
 
 ## Differences
 * Liquid in the barrel
