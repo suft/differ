@@ -1,0 +1,14 @@
+{
+  "name": "differ",
+  "version": "1.0.0",
+  "description": "Spots The Differences Between Two Images",
+  "main": "./index.js",
+  "scripts": {
+      "start": "node ./index.js"
+  },
+  "author": "Sufien Tout",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.2.27"
+  }
+}
