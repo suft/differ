@@ -17,8 +17,15 @@ An algorithm written in Node, to spot the differences between two images. The al
 * Gazebo railing
 
 ## Thinking Process
-When I first started the problem, I was able to spot several differences just by inspection, however I decided to write an algorithm to ensure I would spot all the differences. My first attempt at writing the algorithm involved comparing hexidecimal colour values of the pixels of both images, to my suprise, my program was outputing a 94% difference between the two images. 
+When I first started the problem, I was able to spot several differences just by inspection, however I decided to write an algorithm to ensure I would spot all the differences. My first attempt at writing the algorithm involved comparing hexadecimal colour values of the pixels of both images, to my surprise, my program was outputting a 94% difference between the two images. Since the pixel colour comparison wasn't yielding any results, I opened the image in an editor and used an eye-dropper to find that the pixels which supposedly the "same" varied slightly while the pixels which were "different" varied quite a lot. So, I converted the hexadecimal colour into RGBA and calculated the percent difference between between the red aspect, green aspect, blue aspect, alpha aspect of each pixel. From there, I used the interquartile range to identify outliers.
 
+## Time Spent
+* Total of 4 hours
+    * Choosing what language to use
+    * Looking for a pixel manipulation library
+    * Hexadecimal colour comparison approach
+    * Calculating a percent tolerance to detect outliers
+    * RGBA percent difference approach
 
 ## Dependencies
 Jimp [[https://github.com/oliver-moran/jimp](https://github.com/oliver-moran/jimp)]
